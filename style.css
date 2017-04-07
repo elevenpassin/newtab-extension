@@ -1,0 +1,132 @@
+html {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.static {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.todo-list {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 350px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    color: #222;
+}
+
+.todo-item {
+    margin: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    min-height: 20px;
+    padding: 5px;
+}
+
+.todo-controls {
+    position: absolute;
+    bottom: -70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.todo-controls .todo-entry {
+    background: #FFF;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    min-height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    width: 75%;
+    font-size: 20px;
+}
+
+.todo-controls .todo-entry:focus {
+    outline: none;
+}
+
+.todo-controls .todo-btn {
+    display: inline;
+    background: #65DEF1;
+    max-width: 50px;
+    min-height: 50px;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.todo-controls .todo-btn:focus,
+.todo-controls .todo-btn:active {
+    outline: none;
+}
+
+.todo-head {
+    color: #FFF;
+    position: absolute;
+    font-size: 40px;
+    left: 300px;
+    text-transform: uppercase;
+    margin: 10px;
+    opacity: 0.8;
+    top: 0px;
+}
+
+.time {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    right: 50px;
+    top: 200px;
+    opacity: .9;
+}
+
+.time .day {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+}
+
+.time .currenttime {
+    font-size: 150px;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+    left: 10px;
+    text-transform: uppercase;
+}
+
+.time .currentstate {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    text-transform: uppercase;
+}

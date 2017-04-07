@@ -1,0 +1,12 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "A plain text description",
+
+  // Optional
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  }
+}
